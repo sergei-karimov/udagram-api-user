@@ -17,7 +17,7 @@ script:
   - npm run build
   - docker --version # print the version for logging
   - docker build -t udagram-api-user .
-  - docker tag udagram-api-user kariman/udagram-api-user:v1
+  - docker tag kariman/udagram-api-user kariman/udagram-api-user:v1
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
